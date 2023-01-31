@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landing Page</title>
+</head>
+<body>
+  <h1>Welcome to my GitHub page</h1>
+  <p>Here is my landing page.</p>
+  <a href="{{ url_for('resume') }}">Resume</a>
+  <a href="{{ url_for('upload') }}">Upload</a>
+</body>
+</html>
+
+<!-- resume.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume</title>
+</head>
+<body>
+  <h1>Resume</h1>
+  <p>This is where your resume information would go.</p>
+</body>
+</html>
+
+<!-- upload.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload</title>
+  <script>
+    function handleFileUpload() {
+      // handle file upload using JavaScript
+    }
+  </script>
+</head>
+<body>
+  <h1>Upload</h1>
+  <form onsubmit="handleFileUpload()">
+    <input type="file" />
+    <input type="submit" />
+  </form>
+</body>
+</html>
+
+<!-- main.css -->
+body {
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  margin: 1em;
+  padding: 1em;
+  background-color: lightgray;
+  text-decoration: none;
+  color: black;
+}
